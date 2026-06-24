@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HsS-qg-v3V" customClass="IJPPhotoCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HsS-qg-v3V" id="KGd-xO-L7B">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emQ-Qz-r9i">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="88"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downRemoveBading" translatesAutoresizingMaskIntoConstraints="NO" id="mAR-kY-vZB">
+                                <rect key="frame" x="16" y="7" width="358" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73.99" id="a7n-4a-Vaj"/>
+                                    <constraint firstAttribute="width" secondItem="mAR-kY-vZB" secondAttribute="height" multiplier="179:37" id="q9X-sB-Auj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mAR-kY-vZB" firstAttribute="top" secondItem="emQ-Qz-r9i" secondAttribute="top" constant="6.99" id="bxu-Qi-hBV"/>
+                            <constraint firstAttribute="trailing" secondItem="mAR-kY-vZB" secondAttribute="trailing" constant="16.01" id="x3v-zy-86W"/>
+                            <constraint firstItem="mAR-kY-vZB" firstAttribute="leading" secondItem="emQ-Qz-r9i" secondAttribute="leading" constant="15.98" id="QVj-BR-tU6"/>
+                            <constraint firstAttribute="bottom" secondItem="mAR-kY-vZB" secondAttribute="bottom" constant="6.98" id="hGt-pI-gYr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="emQ-Qz-r9i" secondAttribute="bottom" id="THs-7t-riw"/>
+                    <constraint firstAttribute="trailing" secondItem="emQ-Qz-r9i" secondAttribute="trailing" id="y84-Gr-VAq"/>
+                    <constraint firstItem="emQ-Qz-r9i" firstAttribute="top" secondItem="KGd-xO-L7B" secondAttribute="top" id="dhv-r7-qyB"/>
+                    <constraint firstItem="emQ-Qz-r9i" firstAttribute="leading" secondItem="KGd-xO-L7B" secondAttribute="leading" id="MSE-B5-UDu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="VS5-cz-9Z3"/>
+            <connections>
+                <outlet property="icon" destination="mAR-kY-vZB" id="rio-p4-cje"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="downRemoveBading" width="358" height="74"/>
+    </resources>
+</document>

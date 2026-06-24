@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="HsS-qg-v3V" customClass="GNURegisterDetailsCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HsS-qg-v3V" id="KGd-xO-L7B">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="storeNumber" translatesAutoresizingMaskIntoConstraints="NO" id="CIA-jx-RPP">
+                        <rect key="frame" x="16" y="22" width="30" height="30"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jf-wB-KJI">
+                        <rect key="frame" x="54" y="25" width="39.666666666666657" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mgi-CJ-c2S">
+                        <rect key="frame" x="16" y="72" width="155" height="34"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Se7-a8-Nnw">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49.98" id="p87-NG-AGH"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="welcomeLijiqianjin"/>
+                                <connections>
+                                    <action selector="aireplyClick:" destination="HsS-qg-v3V" eventType="touchUpInside" id="r8v-rS-jC5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYh-AT-uDj">
+                                <rect key="frame" x="50" y="0.0" width="48" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48.02" id="uFQ-X1-MwQ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="loginAgin"/>
+                                <connections>
+                                    <action selector="aidAbroadcast:" destination="HsS-qg-v3V" eventType="touchUpInside" id="tVM-dW-Cqx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtB-vK-g10">
+                                <rect key="frame" x="98" y="0.0" width="57" height="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ustomSpeeds"/>
+                                <connections>
+                                    <action selector="aidApass:" destination="HsS-qg-v3V" eventType="touchUpInside" id="M7z-fs-v96"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TtB-vK-g10" firstAttribute="top" secondItem="Mgi-CJ-c2S" secondAttribute="top" id="dbc-wv-5FE"/>
+                            <constraint firstAttribute="bottom" secondItem="GYh-AT-uDj" secondAttribute="bottom" id="fpI-Mu-5Bz"/>
+                            <constraint firstItem="TtB-vK-g10" firstAttribute="leading" secondItem="GYh-AT-uDj" secondAttribute="trailing" id="0dA-mk-eHl"/>
+                            <constraint firstAttribute="bottom" secondItem="TtB-vK-g10" secondAttribute="bottom" id="KCd-gI-AQN"/>
+                            <constraint firstAttribute="bottom" secondItem="Se7-a8-Nnw" secondAttribute="bottom" id="Nv6-6P-L1x"/>
+                            <constraint firstItem="GYh-AT-uDj" firstAttribute="top" secondItem="Mgi-CJ-c2S" secondAttribute="top" id="EUV-ld-MSj"/>
+                            <constraint firstItem="GYh-AT-uDj" firstAttribute="leading" secondItem="Se7-a8-Nnw" secondAttribute="trailing" id="lYW-ZG-402"/>
+                            <constraint firstAttribute="height" constant="33.99" id="Tqw-5e-KmD"/>
+                            <constraint firstAttribute="trailing" secondItem="TtB-vK-g10" secondAttribute="trailing" id="hPs-xS-ovj"/>
+                            <constraint firstItem="Se7-a8-Nnw" firstAttribute="leading" secondItem="Mgi-CJ-c2S" secondAttribute="leading" id="edh-Dm-baC"/>
+                            <constraint firstItem="Se7-a8-Nnw" firstAttribute="top" secondItem="Mgi-CJ-c2S" secondAttribute="top" id="28n-Tg-272"/>
+                            <constraint firstAttribute="width" constant="155.02" id="NpZ-mG-Inm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="17"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectMainLoading.gif" translatesAutoresizingMaskIntoConstraints="NO" id="bid-bS-Adj" customClass="YYAnimatedImageView">
+                        <rect key="frame" x="45" y="17" width="55" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54.98" id="jf7-S1-lil"/>
+                            <constraint firstAttribute="height" constant="39.97" id="pBY-z6-5yR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bid-bS-Adj" firstAttribute="leading" secondItem="KGd-xO-L7B" secondAttribute="leading" constant="45.02" id="4wP-hQ-SRz"/>
+                    <constraint firstItem="CIA-jx-RPP" firstAttribute="leading" secondItem="KGd-xO-L7B" secondAttribute="leading" constant="16.03" id="cP8-o0-tCO"/>
+                    <constraint firstItem="7jf-wB-KJI" firstAttribute="leading" secondItem="KGd-xO-L7B" secondAttribute="leading" constant="54.04" id="fpX-tc-47x"/>
+                    <constraint firstItem="bid-bS-Adj" firstAttribute="top" secondItem="KGd-xO-L7B" secondAttribute="top" constant="16.95" id="J2t-KX-gj2"/>
+                    <constraint firstAttribute="bottom" secondItem="7jf-wB-KJI" secondAttribute="bottom" constant="67.04" id="cj0-bu-8x0"/>
+                    <constraint firstItem="Mgi-CJ-c2S" firstAttribute="leading" secondItem="KGd-xO-L7B" secondAttribute="leading" constant="16.02" id="a13-2Z-faQ"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7jf-wB-KJI" secondAttribute="trailing" constant="56.99" id="GVa-Uy-Y2E"/>
+                    <constraint firstItem="7jf-wB-KJI" firstAttribute="top" secondItem="KGd-xO-L7B" secondAttribute="top" constant="25.02" id="BIK-1w-dm3"/>
+                    <constraint firstItem="Mgi-CJ-c2S" firstAttribute="top" secondItem="7jf-wB-KJI" secondAttribute="bottom" constant="20.97" id="Tdr-D7-gDS"/>
+                    <constraint firstItem="CIA-jx-RPP" firstAttribute="top" secondItem="KGd-xO-L7B" secondAttribute="top" constant="22.01" id="X8z-EY-9dB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="VS5-cz-9Z3"/>
+            <connections>
+                <outlet property="aidAlabel" destination="7jf-wB-KJI" id="fvt-E2-Tf1"/>
+                <outlet property="gifImage" destination="bid-bS-Adj" id="986-xv-U58"/>
+            </connections>
+            <point key="canvasLocation" x="201.53846153846152" y="-16.350710900473931"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="storeNumber" width="30" height="30"/>
+        <image name="ustomSpeeds" width="16" height="18"/>
+        <image name="loginAgin" width="18" height="15"/>
+        <image name="welcomeLijiqianjin" width="18" height="19"/>
+        <image name="selectMainLoading.gif" width="200" height="200"/>
+    </resources>
+</document>
