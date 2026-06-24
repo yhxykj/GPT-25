@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "AI智能图像处理 + 绘画&变装&编辑 + 路径 5 + 路径 5备份 + 矩形 + 位图 + 位图 + 位图 + 位图 蒙版@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "AI智能图像处理 + 绘画&变装&编辑 + 路径 5 + 路径 5备份 + 矩形 + 位图 + 位图 + 位图 + 位图 蒙版@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
