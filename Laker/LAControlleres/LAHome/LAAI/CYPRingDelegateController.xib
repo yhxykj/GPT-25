@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner" customClass="CYPRingDelegateController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="bgImage" destination="IAN-pE-ezV" id="GoY-yZ-Hkh"/>
+                <outlet property="bgView" destination="tPq-Zr-5yZ" id="cMO-2f-un9"/>
+                <outlet property="button" destination="t1m-no-QZX" id="zWy-KQ-29D"/>
+                <outlet property="gifImage" destination="2SB-sI-R6W" id="mbo-SZ-HNW"/>
+                <outlet property="view" destination="odF-ug-Hqn" id="KC7-tr-GKj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="odF-ug-Hqn">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPq-Zr-5yZ">
+                    <rect key="frame" x="20" y="166" width="353" height="235"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RemoveBG.gif" translatesAutoresizingMaskIntoConstraints="NO" id="2SB-sI-R6W" customClass="YYAnimatedImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="235"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="2SB-sI-R6W" secondAttribute="bottom" id="R2D-g0-O2N"/>
+                        <constraint firstItem="2SB-sI-R6W" firstAttribute="top" secondItem="tPq-Zr-5yZ" secondAttribute="top" id="AFn-HU-7he"/>
+                        <constraint firstAttribute="height" constant="234.99" id="7VW-wa-pWT"/>
+                        <constraint firstItem="2SB-sI-R6W" firstAttribute="leading" secondItem="tPq-Zr-5yZ" secondAttribute="leading" id="o2v-Z2-kpS"/>
+                        <constraint firstAttribute="trailing" secondItem="2SB-sI-R6W" secondAttribute="trailing" id="bl0-Wq-BJK"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiaoWorkJjzy" translatesAutoresizingMaskIntoConstraints="NO" id="IAN-pE-ezV">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1m-no-QZX">
+                    <rect key="frame" x="31" y="711" width="331" height="54"/>
+                    <color key="backgroundColor" red="0.054901960784313725" green="0.058823529411764705" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54.02" id="BFt-O7-xDP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="立即修复"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="27"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="uploadPhotoAction:" destination="JXE-rh-oQk" eventType="touchUpInside" id="oZ6-FC-W8U"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20积分/次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh6-vl-f32">
+                    <rect key="frame" x="279.33333333333331" y="726" width="68.666666666666686" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23.99" id="wk8-Pi-AWF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXJ-tw-eM4">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQG-dQ-EGv">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55.01" id="oj4-lb-ExX"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="materialEditRemove"/>
+                            <connections>
+                                <action selector="backAction:" destination="JXE-rh-oQk" eventType="touchUpInside" id="W8F-MB-yYa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-2a-8Jt">
+                            <rect key="frame" x="308" y="0.0" width="75" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="74.97" id="yZ7-OQ-Q9i"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ustomCanvas"/>
+                            <connections>
+                                <action selector="mineworksAction:" destination="JXE-rh-oQk" eventType="touchUpInside" id="27G-h5-VP9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="eok-2a-8Jt" secondAttribute="bottom" id="zIJ-uJ-1QW"/>
+                        <constraint firstAttribute="trailing" secondItem="eok-2a-8Jt" secondAttribute="trailing" constant="10.01" id="gwv-cA-NpI"/>
+                        <constraint firstItem="OQG-dQ-EGv" firstAttribute="leading" secondItem="DXJ-tw-eM4" secondAttribute="leading" id="g4d-DQ-K4T"/>
+                        <constraint firstAttribute="bottom" secondItem="OQG-dQ-EGv" secondAttribute="bottom" id="X9G-JR-T3T"/>
+                        <constraint firstItem="eok-2a-8Jt" firstAttribute="top" secondItem="DXJ-tw-eM4" secondAttribute="top" id="xRd-96-koE"/>
+                        <constraint firstAttribute="height" constant="44.01" id="5Vv-YP-9t6"/>
+                        <constraint firstItem="OQG-dQ-EGv" firstAttribute="top" secondItem="DXJ-tw-eM4" secondAttribute="top" id="zQr-HP-KAu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="g7a-MZ-wls"/>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="trailing" secondItem="tPq-Zr-5yZ" secondAttribute="trailing" constant="20.05" id="Qql-tx-rnq"/>
+                <constraint firstAttribute="bottom" secondItem="IAN-pE-ezV" secondAttribute="bottom" id="aDL-WE-Bju"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="bottom" secondItem="t1m-no-QZX" secondAttribute="bottom" constant="53.01" id="TFE-Sa-glw"/>
+                <constraint firstItem="Jh6-vl-f32" firstAttribute="centerY" secondItem="t1m-no-QZX" secondAttribute="centerY" id="kYw-DT-0GW"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="trailing" secondItem="t1m-no-QZX" secondAttribute="trailing" constant="30.99" id="2kJ-xX-N6R"/>
+                <constraint firstItem="IAN-pE-ezV" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" id="xGF-cC-Lyk"/>
+                <constraint firstItem="DXJ-tw-eM4" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" id="5Te-aB-bxP"/>
+                <constraint firstItem="IAN-pE-ezV" firstAttribute="top" secondItem="odF-ug-Hqn" secondAttribute="top" id="ms7-IP-sVr"/>
+                <constraint firstAttribute="trailing" secondItem="IAN-pE-ezV" secondAttribute="trailing" id="RSV-AW-bIY"/>
+                <constraint firstItem="tPq-Zr-5yZ" firstAttribute="top" secondItem="DXJ-tw-eM4" secondAttribute="bottom" constant="62.98" id="CSZ-lV-WKP"/>
+                <constraint firstItem="DXJ-tw-eM4" firstAttribute="top" secondItem="g7a-MZ-wls" secondAttribute="top" id="JYB-HC-sdg"/>
+                <constraint firstItem="t1m-no-QZX" firstAttribute="centerX" secondItem="odF-ug-Hqn" secondAttribute="centerX" id="pXN-YJ-n0p"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="trailing" secondItem="Jh6-vl-f32" secondAttribute="trailing" constant="44.99" id="HGh-wH-rq6"/>
+                <constraint firstItem="tPq-Zr-5yZ" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" constant="20.02" id="jYK-9O-21k"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="trailing" secondItem="DXJ-tw-eM4" secondAttribute="trailing" id="8Ct-W4-C4G"/>
+                <constraint firstItem="t1m-no-QZX" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" constant="30.98" id="jLT-3c-dG7"/>
+            </constraints>
+            <point key="canvasLocation" x="114" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RemoveBG.gif" width="400" height="267"/>
+        <image name="jiaoWorkJjzy" width="390" height="844"/>
+        <image name="materialEditRemove" width="10" height="18"/>
+        <image name="ustomCanvas" width="72" height="26"/>
+    </resources>
+</document>

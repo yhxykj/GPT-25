@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner" customClass="KMCardController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="odF-ug-Hqn" id="KC7-tr-GKj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="odF-ug-Hqn">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="insertDefault_w4Flow" translatesAutoresizingMaskIntoConstraints="NO" id="RSE-tq-4u3">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xm6-XL-gvf">
+                    <rect key="frame" x="46" y="744" width="301" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="outuHelpResponse"/>
+                    <connections>
+                        <action selector="_nextClick" destination="JXE-rh-oQk" eventType="touchUpInside" id="Q6M-kh-F9G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFU-LL-sdG">
+                    <rect key="frame" x="10" y="59" width="55" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54.99" id="Z8M-hG-GdN"/>
+                        <constraint firstAttribute="height" constant="44.04" id="s50-WX-a4K"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="materialEditRemove"/>
+                    <connections>
+                        <action selector="_dissmiss:" destination="JXE-rh-oQk" eventType="touchUpInside" id="HSV-VL-HmJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="g7a-MZ-wls"/>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XFU-LL-sdG" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" constant="9.99" id="sMI-Rp-Jwg"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="trailing" secondItem="Xm6-XL-gvf" secondAttribute="trailing" constant="45.99" id="D6p-Ip-PIW"/>
+                <constraint firstItem="XFU-LL-sdG" firstAttribute="top" secondItem="g7a-MZ-wls" secondAttribute="top" id="pTZ-7s-sDX"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="trailing" secondItem="RSE-tq-4u3" secondAttribute="trailing" id="Ghr-c9-HY5"/>
+                <constraint firstAttribute="bottom" secondItem="RSE-tq-4u3" secondAttribute="bottom" id="xCm-nH-Z8B"/>
+                <constraint firstItem="RSE-tq-4u3" firstAttribute="top" secondItem="odF-ug-Hqn" secondAttribute="top" id="9pB-xZ-ctB"/>
+                <constraint firstItem="Xm6-XL-gvf" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" constant="46.02" id="cfD-RX-WjP"/>
+                <constraint firstItem="RSE-tq-4u3" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" id="mgv-0E-MNu"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="bottom" secondItem="Xm6-XL-gvf" secondAttribute="bottom" constant="19.97" id="fnZ-jS-8re"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="materialEditRemove" width="10" height="18"/>
+        <image name="insertDefault_w4Flow" width="390" height="844"/>
+        <image name="outuHelpResponse" width="298" height="54"/>
+    </resources>
+</document>

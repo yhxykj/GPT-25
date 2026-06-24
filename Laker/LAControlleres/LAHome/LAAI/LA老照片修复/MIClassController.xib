@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner" customClass="MIClassController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="zdB-QW-UvT" id="c9N-LC-bin"/>
+                <outlet property="picImage" destination="4bG-EH-AGh" id="1ib-bw-Isx"/>
+                <outlet property="savebutton" destination="ZQb-zy-3al" id="SHL-ay-SNL"/>
+                <outlet property="view" destination="odF-ug-Hqn" id="KC7-tr-GKj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="odF-ug-Hqn">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXh-ZQ-e7I">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GZ-VX-iZl">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54.97" id="Etn-AL-7Pr"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="materialEditRemove"/>
+                            <connections>
+                                <action selector="backAction:" destination="JXE-rh-oQk" eventType="touchUpInside" id="Dk9-TL-0e6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQb-zy-3al">
+                            <rect key="frame" x="308" y="0.0" width="75" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75.04" id="cSg-oO-3d1"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="waterPath"/>
+                            <connections>
+                                <action selector="saveAction:" destination="JXE-rh-oQk" eventType="touchUpInside" id="dBX-7y-Myo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ZQb-zy-3al" firstAttribute="top" secondItem="GXh-ZQ-e7I" secondAttribute="top" id="XQM-Oi-Szj"/>
+                        <constraint firstAttribute="trailing" secondItem="ZQb-zy-3al" secondAttribute="trailing" constant="10.01" id="6V1-m4-jjA"/>
+                        <constraint firstItem="7GZ-VX-iZl" firstAttribute="top" secondItem="GXh-ZQ-e7I" secondAttribute="top" id="ki9-kU-N0i"/>
+                        <constraint firstAttribute="height" constant="44.02" id="C2G-II-ZQb"/>
+                        <constraint firstAttribute="bottom" secondItem="7GZ-VX-iZl" secondAttribute="bottom" id="JJn-mb-zEq"/>
+                        <constraint firstAttribute="bottom" secondItem="ZQb-zy-3al" secondAttribute="bottom" id="1LW-PL-rEP"/>
+                        <constraint firstItem="7GZ-VX-iZl" firstAttribute="leading" secondItem="GXh-ZQ-e7I" secondAttribute="leading" id="9QY-Yv-vAe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdB-QW-UvT">
+                    <rect key="frame" x="15" y="114" width="363" height="467"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4bG-EH-AGh">
+                            <rect key="frame" x="0.0" y="0.0" width="363" height="467"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="4bG-EH-AGh" secondAttribute="bottom" id="1Sa-yk-GB2"/>
+                        <constraint firstAttribute="height" constant="466.96" id="BTh-7G-ekw"/>
+                        <constraint firstItem="4bG-EH-AGh" firstAttribute="leading" secondItem="zdB-QW-UvT" secondAttribute="leading" id="Jh9-9q-Axz"/>
+                        <constraint firstAttribute="trailing" secondItem="4bG-EH-AGh" secondAttribute="trailing" id="mko-qr-47W"/>
+                        <constraint firstItem="4bG-EH-AGh" firstAttribute="top" secondItem="zdB-QW-UvT" secondAttribute="top" id="xNB-nb-JiW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="g7a-MZ-wls"/>
+            <color key="backgroundColor" red="0.054901960784313725" green="0.058823529411764705" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GXh-ZQ-e7I" secondAttribute="trailing" id="d6v-22-PhZ"/>
+                <constraint firstItem="zdB-QW-UvT" firstAttribute="top" secondItem="GXh-ZQ-e7I" secondAttribute="bottom" constant="11.01" id="1Nh-ZW-K4N"/>
+                <constraint firstItem="GXh-ZQ-e7I" firstAttribute="top" secondItem="g7a-MZ-wls" secondAttribute="top" id="52B-gJ-kVj"/>
+                <constraint firstItem="zdB-QW-UvT" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" constant="14.99" id="wGM-5J-nGk"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="trailing" secondItem="zdB-QW-UvT" secondAttribute="trailing" constant="15.02" id="W79-nN-Jko"/>
+                <constraint firstItem="GXh-ZQ-e7I" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" id="Ux7-ON-w0u"/>
+            </constraints>
+            <point key="canvasLocation" x="178" y="-42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="waterPath" width="66" height="30"/>
+        <image name="materialEditRemove" width="10" height="18"/>
+    </resources>
+</document>

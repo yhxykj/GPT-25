@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner" customClass="HDetailsShouController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="dPW-K8-LWq" id="a0g-M3-a9b"/>
+                <outlet property="titleView" destination="rdi-iW-8nq" id="T9n-gl-rHq"/>
+                <outlet property="view" destination="odF-ug-Hqn" id="KC7-tr-GKj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="odF-ug-Hqn">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWW-tO-TiX">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI助手" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfD-0S-PO9">
+                            <rect key="frame" x="169.33333333333334" y="11.666666666666664" width="51.666666666666657" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JO-Tg-8uX">
+                            <rect key="frame" x="330" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55.02" id="6UD-In-0qy"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="modityWater"/>
+                            <connections>
+                                <action selector="minebuttonClick:" destination="JXE-rh-oQk" eventType="touchUpInside" id="bex-79-God"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="1JO-Tg-8uX" secondAttribute="bottom" id="cNb-18-L55"/>
+                        <constraint firstItem="GfD-0S-PO9" firstAttribute="centerX" secondItem="RWW-tO-TiX" secondAttribute="centerX" id="SEm-cp-8BN"/>
+                        <constraint firstAttribute="trailing" secondItem="1JO-Tg-8uX" secondAttribute="trailing" constant="4.98" id="FQO-Li-moq"/>
+                        <constraint firstAttribute="height" constant="43.98" id="WfO-HI-6xp"/>
+                        <constraint firstItem="GfD-0S-PO9" firstAttribute="centerY" secondItem="RWW-tO-TiX" secondAttribute="centerY" id="Pj9-3z-myu"/>
+                        <constraint firstItem="1JO-Tg-8uX" firstAttribute="top" secondItem="RWW-tO-TiX" secondAttribute="top" id="vLf-XS-UJe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdi-iW-8nq">
+                    <rect key="frame" x="0.0" y="91" width="390" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43.95" id="qDt-fV-oP3"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dPW-K8-LWq">
+                    <rect key="frame" x="0.0" y="135" width="390" height="675"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="usK-5g-0k2">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="g7a-MZ-wls"/>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dPW-K8-LWq" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" id="wcb-Rp-vZG"/>
+                <constraint firstItem="rdi-iW-8nq" firstAttribute="leading" secondItem="odF-ug-Hqn" secondAttribute="leading" id="Skt-8k-8oH"/>
+                <constraint firstAttribute="trailing" secondItem="RWW-tO-TiX" secondAttribute="trailing" id="nrz-ux-E97"/>
+                <constraint firstItem="RWW-tO-TiX" firstAttribute="top" secondItem="g7a-MZ-wls" secondAttribute="top" id="2rc-Im-xvD"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="bottom" secondItem="dPW-K8-LWq" secondAttribute="bottom" id="rAL-z4-Ang"/>
+                <constraint firstItem="dPW-K8-LWq" firstAttribute="top" secondItem="rdi-iW-8nq" secondAttribute="bottom" id="jHW-Y6-mjQ"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="trailing" secondItem="rdi-iW-8nq" secondAttribute="trailing" id="f2l-zV-U38"/>
+                <constraint firstAttribute="trailing" secondItem="dPW-K8-LWq" secondAttribute="trailing" id="jJF-Jj-cMJ"/>
+                <constraint firstItem="rdi-iW-8nq" firstAttribute="top" secondItem="RWW-tO-TiX" secondAttribute="bottom" id="AYB-HR-VZp"/>
+                <constraint firstItem="RWW-tO-TiX" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" id="4y2-bJ-eUf"/>
+            </constraints>
+            <point key="canvasLocation" x="104.61538461538461" y="-14.218009478672984"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="modityWater" width="32" height="32"/>
+    </resources>
+</document>

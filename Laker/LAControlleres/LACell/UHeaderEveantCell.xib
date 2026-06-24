@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="201" id="HsS-qg-v3V" customClass="UHeaderEveantCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="458" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HsS-qg-v3V" id="KGd-xO-L7B">
+                <rect key="frame" x="0.0" y="0.0" width="458" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家庭财务管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNu-32-AQ7">
+                        <rect key="frame" x="20" y="10" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.035294117647058823" green="0.039215686274509803" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNp-23-hxK">
+                        <rect key="frame" x="16" y="37" width="426" height="154"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在这个示例中，我们创建了一个包含三个页面的 UIScrollView，并使用 UIPageControl 显示当前页面的指示器。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31D-Ha-Lp0">
+                                <rect key="frame" x="20" y="16" width="386" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.035294117647058823" green="0.039215686274509803" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yf-wf-EY1">
+                                <rect key="frame" x="371" y="110" width="55" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54.95" id="cb4-Vz-Qjb"/>
+                                    <constraint firstAttribute="height" constant="44.02" id="un6-46-Hhg"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="pageRing"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="31D-Ha-Lp0" firstAttribute="leading" secondItem="pNp-23-hxK" secondAttribute="leading" constant="19.99" id="M3L-Ve-y7s"/>
+                            <constraint firstAttribute="bottom" secondItem="0Yf-wf-EY1" secondAttribute="bottom" id="G7s-WX-ef2"/>
+                            <constraint firstItem="31D-Ha-Lp0" firstAttribute="top" secondItem="pNp-23-hxK" secondAttribute="top" constant="15.97" id="umt-np-6nN"/>
+                            <constraint firstAttribute="trailing" secondItem="0Yf-wf-EY1" secondAttribute="trailing" id="JUV-XA-j5a"/>
+                            <constraint firstAttribute="trailing" secondItem="31D-Ha-Lp0" secondAttribute="trailing" constant="20.02" id="oA2-ho-lAl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="pNp-23-hxK" secondAttribute="bottom" constant="10.04" id="J3X-OR-14F"/>
+                    <constraint firstItem="mNu-32-AQ7" firstAttribute="leading" secondItem="KGd-xO-L7B" secondAttribute="leading" constant="20.03" id="rLn-Em-ZWn"/>
+                    <constraint firstAttribute="trailing" secondItem="pNp-23-hxK" secondAttribute="trailing" constant="16.01" id="42V-yn-ZxV"/>
+                    <constraint firstItem="pNp-23-hxK" firstAttribute="top" secondItem="mNu-32-AQ7" secondAttribute="bottom" constant="9.99" id="DIL-kY-70p"/>
+                    <constraint firstItem="pNp-23-hxK" firstAttribute="leading" secondItem="KGd-xO-L7B" secondAttribute="leading" constant="15.97" id="ycf-3m-M22"/>
+                    <constraint firstItem="mNu-32-AQ7" firstAttribute="top" secondItem="KGd-xO-L7B" secondAttribute="top" constant="9.99" id="0RF-F4-CTJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="VS5-cz-9Z3"/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="create_content_label" destination="31D-Ha-Lp0" id="Jo6-7Y-Pff"/>
+                <outlet property="create_label" destination="mNu-32-AQ7" id="ko7-g0-90F"/>
+                <outlet property="delete_button" destination="0Yf-wf-EY1" id="kD4-Ye-Qn3"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="42.605633802816904"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pageRing" width="14" height="15"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

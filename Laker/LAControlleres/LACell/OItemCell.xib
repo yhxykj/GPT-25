@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="HsS-qg-v3V" customClass="OItemCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HsS-qg-v3V" id="KGd-xO-L7B">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXV-i5-4nF">
+                        <rect key="frame" x="16" y="12" width="315" height="187"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D31-ZZ-P3j">
+                                <rect key="frame" x="0.0" y="0.0" width="315" height="187"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉，您的免费3条消息已用完，请解锁VIP无限聊天" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFF-DC-nk8">
+                                <rect key="frame" x="19" y="19.999999999999996" width="276" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKA-2t-gFy">
+                                <rect key="frame" x="19" y="74" width="277" height="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="showIcon"/>
+                                <connections>
+                                    <action selector="_enterElevtClick:" destination="HsS-qg-v3V" eventType="touchUpInside" id="F8X-oN-PHj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D3-zR-xk2">
+                                <rect key="frame" x="19" y="128" width="277" height="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="rollingRing"/>
+                                <connections>
+                                    <action selector="_freeNumberClick:" destination="HsS-qg-v3V" eventType="touchUpInside" id="Kl0-XL-xXv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0D3-zR-xk2" secondAttribute="trailing" constant="18.97" id="8Y0-wz-fpi"/>
+                            <constraint firstAttribute="bottom" secondItem="0D3-zR-xk2" secondAttribute="bottom" constant="16.97" id="fNU-Tc-C2w"/>
+                            <constraint firstItem="D31-ZZ-P3j" firstAttribute="leading" secondItem="wXV-i5-4nF" secondAttribute="leading" id="fQz-Lt-wb3"/>
+                            <constraint firstAttribute="trailing" secondItem="D31-ZZ-P3j" secondAttribute="trailing" id="l2b-Jm-Qsm"/>
+                            <constraint firstItem="QKA-2t-gFy" firstAttribute="leading" secondItem="wXV-i5-4nF" secondAttribute="leading" constant="19.03" id="Inh-QZ-Gjg"/>
+                            <constraint firstAttribute="trailing" secondItem="QKA-2t-gFy" secondAttribute="trailing" constant="18.97" id="x5k-Bt-WKX"/>
+                            <constraint firstItem="D31-ZZ-P3j" firstAttribute="top" secondItem="wXV-i5-4nF" secondAttribute="top" id="97o-qD-2Af"/>
+                            <constraint firstAttribute="height" constant="187.01" id="3JD-NS-OaF"/>
+                            <constraint firstAttribute="bottom" secondItem="D31-ZZ-P3j" secondAttribute="bottom" id="4K7-0v-sKo"/>
+                            <constraint firstAttribute="trailing" secondItem="VFF-DC-nk8" secondAttribute="trailing" constant="19.95" id="eYe-N6-buq"/>
+                            <constraint firstItem="VFF-DC-nk8" firstAttribute="leading" secondItem="wXV-i5-4nF" secondAttribute="leading" constant="19.02" id="Srg-y9-EzV"/>
+                            <constraint firstItem="VFF-DC-nk8" firstAttribute="top" secondItem="wXV-i5-4nF" secondAttribute="top" constant="19.95" id="X49-iY-Abx"/>
+                            <constraint firstAttribute="bottom" secondItem="QKA-2t-gFy" secondAttribute="bottom" constant="70.95" id="Spg-No-8IF"/>
+                            <constraint firstItem="0D3-zR-xk2" firstAttribute="leading" secondItem="wXV-i5-4nF" secondAttribute="leading" constant="18.97" id="3PZ-ku-hl1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wXV-i5-4nF" firstAttribute="leading" secondItem="KGd-xO-L7B" secondAttribute="leading" constant="16.01" id="4n9-Ig-oFx"/>
+                    <constraint firstItem="wXV-i5-4nF" firstAttribute="top" secondItem="KGd-xO-L7B" secondAttribute="top" constant="11.97" id="RTf-bS-AV9"/>
+                    <constraint firstAttribute="bottom" secondItem="wXV-i5-4nF" secondAttribute="bottom" constant="12.01" id="LDa-kY-iqw"/>
+                    <constraint firstAttribute="trailing" secondItem="wXV-i5-4nF" secondAttribute="trailing" constant="43.97" id="4dY-YU-DNz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="VS5-cz-9Z3"/>
+            <connections>
+                <outlet property="label" destination="VFF-DC-nk8" id="CaL-ub-mjJ"/>
+            </connections>
+            <point key="canvasLocation" x="85.496183206106863" y="24.295774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rollingRing" width="251" height="42"/>
+        <image name="showIcon" width="251" height="42"/>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HsS-qg-v3V" customClass="WHCUploadEditCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HsS-qg-v3V" id="KGd-xO-L7B">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6E-xS-hZP">
+                        <rect key="frame" x="49" y="18.666666666666668" width="37.333333333333343" height="18.000000000000004"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiaoDeepseekAssitant" translatesAutoresizingMaskIntoConstraints="NO" id="2sy-vF-xvn">
+                        <rect key="frame" x="296" y="21.666666666666668" width="8" height="12.000000000000004"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="replyRemove" translatesAutoresizingMaskIntoConstraints="NO" id="TyU-zH-KBz">
+                        <rect key="frame" x="21" y="18" width="17" height="19"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TyU-zH-KBz" firstAttribute="centerY" secondItem="KGd-xO-L7B" secondAttribute="centerY" id="pyv-Ki-rlL"/>
+                    <constraint firstAttribute="trailing" secondItem="2sy-vF-xvn" secondAttribute="trailing" constant="15.98" id="6Fv-pQ-lFK"/>
+                    <constraint firstItem="2sy-vF-xvn" firstAttribute="centerY" secondItem="KGd-xO-L7B" secondAttribute="centerY" id="umd-3v-c8E"/>
+                    <constraint firstItem="X6E-xS-hZP" firstAttribute="leading" secondItem="KGd-xO-L7B" secondAttribute="leading" constant="48.99" id="PuS-7P-8hU"/>
+                    <constraint firstItem="TyU-zH-KBz" firstAttribute="leading" secondItem="KGd-xO-L7B" secondAttribute="leading" constant="21.01" id="apr-BJ-v9o"/>
+                    <constraint firstItem="X6E-xS-hZP" firstAttribute="centerY" secondItem="KGd-xO-L7B" secondAttribute="centerY" id="EuR-rd-TWM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="VS5-cz-9Z3"/>
+            <connections>
+                <outlet property="icon" destination="TyU-zH-KBz" id="mGz-hQ-IMr"/>
+                <outlet property="label" destination="X6E-xS-hZP" id="DDu-1O-yly"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jiaoDeepseekAssitant" width="8" height="12"/>
+        <image name="replyRemove" width="17" height="19"/>
+    </resources>
+</document>

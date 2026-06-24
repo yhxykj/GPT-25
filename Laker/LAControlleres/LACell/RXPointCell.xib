@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HsS-qg-v3V" customClass="RXPointCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HsS-qg-v3V" id="KGd-xO-L7B">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ifQ-RV-M6c">
+                        <rect key="frame" x="185.33333333333334" y="12" width="78.666666666666657" height="46"/>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTO-Eg-aZM">
+                        <rect key="frame" x="203.33333333333334" y="25" width="39.666666666666657" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layoutChat" translatesAutoresizingMaskIntoConstraints="NO" id="J0u-KW-ztY">
+                        <rect key="frame" x="274" y="20" width="30" height="30"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ifQ-RV-M6c" secondAttribute="trailing" constant="56.01" id="Gga-au-9Qv"/>
+                    <constraint firstItem="J0u-KW-ztY" firstAttribute="top" secondItem="KGd-xO-L7B" secondAttribute="top" constant="20.02" id="55k-eH-9XO"/>
+                    <constraint firstItem="oTO-Eg-aZM" firstAttribute="top" secondItem="KGd-xO-L7B" secondAttribute="top" constant="25.03" id="Nia-LR-Kbg"/>
+                    <constraint firstAttribute="trailing" secondItem="oTO-Eg-aZM" secondAttribute="trailing" constant="77.04" id="OKl-E0-jmc"/>
+                    <constraint firstItem="oTO-Eg-aZM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KGd-xO-L7B" secondAttribute="leading" constant="57.02" id="4NB-AY-LPw"/>
+                    <constraint firstAttribute="bottom" secondItem="oTO-Eg-aZM" secondAttribute="bottom" constant="24.98" id="Pcj-Hn-zPE"/>
+                    <constraint firstAttribute="bottom" secondItem="ifQ-RV-M6c" secondAttribute="bottom" constant="11.95" id="bQA-ua-gOQ"/>
+                    <constraint firstAttribute="trailing" secondItem="J0u-KW-ztY" secondAttribute="trailing" constant="15.99" id="HVq-UZ-Mid"/>
+                    <constraint firstItem="ifQ-RV-M6c" firstAttribute="top" secondItem="KGd-xO-L7B" secondAttribute="top" constant="12.01" id="xRS-79-xO8"/>
+                    <constraint firstItem="oTO-Eg-aZM" firstAttribute="leading" secondItem="ifQ-RV-M6c" secondAttribute="leading" constant="17.97" id="S6w-V3-S0A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="VS5-cz-9Z3"/>
+            <connections>
+                <outlet property="meQlabel" destination="oTO-Eg-aZM" id="dU7-rM-Hqh"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="-11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="layoutChat" width="30" height="30"/>
+    </resources>
+</document>
