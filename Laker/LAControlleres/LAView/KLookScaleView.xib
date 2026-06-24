@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MAn-RJ-V1u" customClass="KLookScaleView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="231"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNX-u9-f9l">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="231"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="HNX-u9-f9l" firstAttribute="top" secondItem="MAn-RJ-V1u" secondAttribute="top" id="sHK-Jf-Jcn"/>
+                <constraint firstAttribute="trailing" secondItem="HNX-u9-f9l" secondAttribute="trailing" id="eI6-NT-KjO"/>
+                <constraint firstAttribute="bottom" secondItem="HNX-u9-f9l" secondAttribute="bottom" id="Cdt-uX-m5F"/>
+                <constraint firstItem="HNX-u9-f9l" firstAttribute="leading" secondItem="MAn-RJ-V1u" secondAttribute="leading" id="OVL-7O-crj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImage" destination="HNX-u9-f9l" id="Ql3-tm-pK0"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="205.98591549295776"/>
+        </view>
+    </objects>
+</document>

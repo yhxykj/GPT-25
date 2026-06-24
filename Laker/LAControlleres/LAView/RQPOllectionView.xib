@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MAn-RJ-V1u" customClass="RQPOllectionView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6hI-9I-bmo">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2BS-7k-Ufc">
+                    <rect key="frame" x="32" y="137" width="326" height="530"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="会员_卡片" translatesAutoresizingMaskIntoConstraints="NO" id="yBu-ou-N5O">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="390"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="390.02" id="szo-Ir-YNA"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwx-8r-vYw">
+                            <rect key="frame" x="65" y="406" width="196" height="59"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="59.01" id="XVx-XA-fNY"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="会员_立即开通"/>
+                            <connections>
+                                <action selector="upgrades:" destination="MAn-RJ-V1u" eventType="touchUpInside" id="Bv9-f2-qPk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjL-ES-1kY">
+                            <rect key="frame" x="141" y="481" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="43.97" id="wFn-ww-jjV"/>
+                                <constraint firstAttribute="height" constant="44.02" id="d1C-4J-15H"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="mainAvatarReusable"/>
+                            <connections>
+                                <action selector="close:" destination="MAn-RJ-V1u" eventType="touchUpInside" id="Q5f-L1-NvX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="zwx-8r-vYw" firstAttribute="top" secondItem="yBu-ou-N5O" secondAttribute="bottom" constant="15.98" id="pWk-Qo-Oav"/>
+                        <constraint firstAttribute="height" constant="529.97" id="0k1-4L-vtN"/>
+                        <constraint firstItem="yBu-ou-N5O" firstAttribute="top" secondItem="2BS-7k-Ufc" secondAttribute="top" id="cwq-Tw-sbn"/>
+                        <constraint firstAttribute="trailing" secondItem="yBu-ou-N5O" secondAttribute="trailing" id="wy1-xB-QFv"/>
+                        <constraint firstItem="zwx-8r-vYw" firstAttribute="centerX" secondItem="2BS-7k-Ufc" secondAttribute="centerX" id="xjM-Wi-kS1"/>
+                        <constraint firstItem="JjL-ES-1kY" firstAttribute="centerX" secondItem="2BS-7k-Ufc" secondAttribute="centerX" id="w18-IK-rrr"/>
+                        <constraint firstItem="yBu-ou-N5O" firstAttribute="centerX" secondItem="2BS-7k-Ufc" secondAttribute="centerX" id="jFK-4I-Ed1"/>
+                        <constraint firstAttribute="width" constant="325.99" id="m7g-ir-Lrl"/>
+                        <constraint firstAttribute="bottom" secondItem="JjL-ES-1kY" secondAttribute="bottom" constant="4.95" id="JC1-4Y-b2q"/>
+                        <constraint firstItem="yBu-ou-N5O" firstAttribute="leading" secondItem="2BS-7k-Ufc" secondAttribute="leading" id="Hka-IE-TkG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vL0-GR-sao"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6hI-9I-bmo" secondAttribute="trailing" id="4tX-BE-dfX"/>
+                <constraint firstItem="6hI-9I-bmo" firstAttribute="leading" secondItem="MAn-RJ-V1u" secondAttribute="leading" id="1SQ-Be-5ts"/>
+                <constraint firstItem="2BS-7k-Ufc" firstAttribute="centerX" secondItem="MAn-RJ-V1u" secondAttribute="centerX" id="IJ1-u3-RXW"/>
+                <constraint firstItem="2BS-7k-Ufc" firstAttribute="centerY" secondItem="MAn-RJ-V1u" secondAttribute="centerY" constant="-20" id="WcG-xi-mUG"/>
+                <constraint firstAttribute="bottom" secondItem="6hI-9I-bmo" secondAttribute="bottom" id="wQh-Yr-zId"/>
+                <constraint firstItem="6hI-9I-bmo" firstAttribute="top" secondItem="MAn-RJ-V1u" secondAttribute="top" id="psG-T5-i6b"/>
+            </constraints>
+            <point key="canvasLocation" x="121.53846153846153" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="会员_卡片" width="326" height="390"/>
+        <image name="mainAvatarReusable" width="28" height="28"/>
+        <image name="会员_立即开通" width="196" height="62"/>
+    </resources>
+</document>

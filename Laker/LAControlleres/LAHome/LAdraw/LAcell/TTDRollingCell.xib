@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FZX-w5-yas" customClass="TTDRollingCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playDetailsSeek" translatesAutoresizingMaskIntoConstraints="NO" id="WmY-fx-TSp">
+                        <rect key="frame" x="0.0" y="0.0" width="119" height="119"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneRingSeek" translatesAutoresizingMaskIntoConstraints="NO" id="dsQ-Am-Xai">
+                        <rect key="frame" x="49" y="12" width="21" height="22"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flN-Bc-xti">
+                        <rect key="frame" x="51" y="93" width="17" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19.98" id="jrn-AN-LO1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WmY-fx-TSp" firstAttribute="top" secondItem="FZX-w5-yas" secondAttribute="top" id="P7F-lQ-CdR"/>
+                <constraint firstAttribute="bottom" secondItem="flN-Bc-xti" secondAttribute="bottom" constant="5.99" id="a3r-2e-0qS"/>
+                <constraint firstItem="flN-Bc-xti" firstAttribute="centerX" secondItem="FZX-w5-yas" secondAttribute="centerX" id="03P-nv-2X0"/>
+                <constraint firstItem="WmY-fx-TSp" firstAttribute="leading" secondItem="FZX-w5-yas" secondAttribute="leading" id="E8i-AF-06N"/>
+                <constraint firstItem="dsQ-Am-Xai" firstAttribute="top" secondItem="FZX-w5-yas" secondAttribute="top" constant="12.02" id="wl5-4R-0fz"/>
+                <constraint firstAttribute="bottom" secondItem="WmY-fx-TSp" secondAttribute="bottom" id="dye-2j-5Zs"/>
+                <constraint firstAttribute="trailing" secondItem="WmY-fx-TSp" secondAttribute="trailing" id="K4R-4q-RsR"/>
+                <constraint firstItem="dsQ-Am-Xai" firstAttribute="centerX" secondItem="FZX-w5-yas" secondAttribute="centerX" id="L5w-Dl-Nc7"/>
+            </constraints>
+            <size key="customSize" width="119" height="119"/>
+            <connections>
+                <outlet property="bgImageToplayout" destination="wl5-4R-0fz" id="OsD-ae-YIW"/>
+                <outlet property="cell_bg_image" destination="WmY-fx-TSp" id="qUR-ix-fYj"/>
+                <outlet property="scale_image" destination="dsQ-Am-Xai" id="IuQ-x4-T7j"/>
+                <outlet property="scale_label" destination="flN-Bc-xti" id="4EG-D5-OI6"/>
+            </connections>
+            <point key="canvasLocation" x="182.44274809160305" y="11.619718309859156"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="playDetailsSeek" width="61" height="61"/>
+        <image name="phoneRingSeek" width="21" height="22"/>
+    </resources>
+</document>

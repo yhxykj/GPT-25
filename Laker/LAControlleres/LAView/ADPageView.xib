@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MAn-RJ-V1u" customClass="ADPageView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="opO-KZ-E6p">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAZ-DT-yM3">
+                    <rect key="frame" x="27.666666666666657" y="190" width="338" height="388"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeDeepseek" translatesAutoresizingMaskIntoConstraints="NO" id="saf-tF-G0i">
+                            <rect key="frame" x="0.0" y="0.0" width="338" height="388"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4n-Bp-jX2">
+                            <rect key="frame" x="19" y="45" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32.02" id="Q3W-QK-PrS"/>
+                                <constraint firstAttribute="width" constant="32.03" id="HFo-ZH-8wa"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="workSeting"/>
+                            <connections>
+                                <action selector="closeAction:" destination="MAn-RJ-V1u" eventType="touchUpInside" id="s81-OW-AIY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJV-9R-aOo">
+                            <rect key="frame" x="56" y="273" width="225" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52.99" id="Ntq-Go-D4G"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="buttonAction:" destination="MAn-RJ-V1u" eventType="touchUpInside" id="YAq-Oi-Xpu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="saf-tF-G0i" firstAttribute="top" secondItem="KAZ-DT-yM3" secondAttribute="top" id="UL3-b7-5E3"/>
+                        <constraint firstAttribute="bottom" secondItem="saf-tF-G0i" secondAttribute="bottom" id="CkG-mh-Yzk"/>
+                        <constraint firstItem="s4n-Bp-jX2" firstAttribute="leading" secondItem="KAZ-DT-yM3" secondAttribute="leading" constant="19.01" id="ns4-he-faD"/>
+                        <constraint firstAttribute="bottom" secondItem="MJV-9R-aOo" secondAttribute="bottom" constant="62.01" id="Q1K-jk-e04"/>
+                        <constraint firstAttribute="width" constant="338.01" id="qY5-pp-e3T"/>
+                        <constraint firstItem="s4n-Bp-jX2" firstAttribute="top" secondItem="KAZ-DT-yM3" secondAttribute="top" constant="45.01" id="smO-4Q-NsJ"/>
+                        <constraint firstAttribute="height" constant="388.01" id="6dj-l4-wTy"/>
+                        <constraint firstItem="MJV-9R-aOo" firstAttribute="leading" secondItem="KAZ-DT-yM3" secondAttribute="leading" constant="55.96" id="QA1-3r-ram"/>
+                        <constraint firstAttribute="trailing" secondItem="MJV-9R-aOo" secondAttribute="trailing" constant="56.99" id="quc-C8-Z9P"/>
+                        <constraint firstItem="saf-tF-G0i" firstAttribute="leading" secondItem="KAZ-DT-yM3" secondAttribute="leading" id="Qe5-XY-4yf"/>
+                        <constraint firstAttribute="trailing" secondItem="saf-tF-G0i" secondAttribute="trailing" id="4oP-Dm-NX8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vL0-GR-sao"/>
+            <constraints>
+                <constraint firstItem="opO-KZ-E6p" firstAttribute="leading" secondItem="vL0-GR-sao" secondAttribute="leading" id="DN0-Q0-dkQ"/>
+                <constraint firstItem="opO-KZ-E6p" firstAttribute="top" secondItem="MAn-RJ-V1u" secondAttribute="top" id="3dS-Rv-Eet"/>
+                <constraint firstItem="KAZ-DT-yM3" firstAttribute="centerX" secondItem="MAn-RJ-V1u" secondAttribute="centerX" id="GsA-3v-ILJ"/>
+                <constraint firstAttribute="bottom" secondItem="opO-KZ-E6p" secondAttribute="bottom" id="VxH-ka-iY1"/>
+                <constraint firstItem="vL0-GR-sao" firstAttribute="trailing" secondItem="opO-KZ-E6p" secondAttribute="trailing" id="PH7-bu-gdU"/>
+                <constraint firstItem="KAZ-DT-yM3" firstAttribute="top" secondItem="MAn-RJ-V1u" secondAttribute="top" constant="189.99" id="1rp-Zz-b58"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="workSeting" width="32" height="32"/>
+        <image name="welcomeDeepseek" width="338" height="388"/>
+    </resources>
+</document>

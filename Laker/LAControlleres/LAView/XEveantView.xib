@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MAn-RJ-V1u" customClass="XEveantView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTp-6u-Shg">
+                    <rect key="frame" x="0.0" y="336" width="393" height="180"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shouScfg" translatesAutoresizingMaskIntoConstraints="NO" id="YPL-qQ-tfN">
+                            <rect key="frame" x="161.66666666666666" y="10" width="70" height="71"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片生成中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrY-pj-rst">
+                            <rect key="frame" x="146" y="111" width="101" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23.96" id="1rL-e6-m2S"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（返回不会中断生成，可在我的作品查看）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh6-Ex-jiw">
+                            <rect key="frame" x="60.666666666666657" y="143" width="272" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.81176470590000005" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gh6-Ex-jiw" firstAttribute="top" secondItem="DrY-pj-rst" secondAttribute="bottom" constant="7.98" id="nLc-6g-mNF"/>
+                        <constraint firstAttribute="height" constant="179.98" id="Ddt-5y-la3"/>
+                        <constraint firstItem="gh6-Ex-jiw" firstAttribute="centerX" secondItem="HTp-6u-Shg" secondAttribute="centerX" id="QZi-23-mcn"/>
+                        <constraint firstItem="DrY-pj-rst" firstAttribute="centerX" secondItem="HTp-6u-Shg" secondAttribute="centerX" id="m6a-DO-cWr"/>
+                        <constraint firstItem="YPL-qQ-tfN" firstAttribute="top" secondItem="HTp-6u-Shg" secondAttribute="top" constant="10.03" id="W9j-y0-95F"/>
+                        <constraint firstAttribute="bottom" secondItem="gh6-Ex-jiw" secondAttribute="bottom" constant="19.98" id="qhC-JY-3Kc"/>
+                        <constraint firstItem="YPL-qQ-tfN" firstAttribute="centerX" secondItem="HTp-6u-Shg" secondAttribute="centerX" id="A81-v4-VeE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vL0-GR-sao"/>
+            <constraints>
+                <constraint firstItem="vL0-GR-sao" firstAttribute="trailing" secondItem="HTp-6u-Shg" secondAttribute="trailing" id="8Pd-Dd-aCR"/>
+                <constraint firstItem="HTp-6u-Shg" firstAttribute="leading" secondItem="vL0-GR-sao" secondAttribute="leading" id="4Vq-ps-U0L"/>
+                <constraint firstItem="HTp-6u-Shg" firstAttribute="centerY" secondItem="MAn-RJ-V1u" secondAttribute="centerY" id="xuY-bm-7v9"/>
+            </constraints>
+            <connections>
+                <outlet property="descLabel" destination="gh6-Ex-jiw" id="YYF-lg-hZD"/>
+                <outlet property="loadImageview" destination="YPL-qQ-tfN" id="PsY-iV-wGa"/>
+                <outlet property="titleLabel" destination="DrY-pj-rst" id="KZN-Fu-ZbO"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shouScfg" width="70" height="71"/>
+    </resources>
+</document>

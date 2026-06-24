@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="H55-1Q-Ofl" customClass="VGraphicsNavigationView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="543"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robotlogo" translatesAutoresizingMaskIntoConstraints="NO" id="Asv-kJ-bAc">
+                    <rect key="frame" x="105.66666666666669" y="126" width="179" height="196"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iV9-dD-Gko">
+                    <rect key="frame" x="105" y="352" width="180" height="48"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="lijiCreate"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Asv-kJ-bAc" firstAttribute="top" secondItem="H55-1Q-Ofl" secondAttribute="top" constant="125.98" id="FOm-6V-CpT"/>
+                <constraint firstItem="iV9-dD-Gko" firstAttribute="top" secondItem="Asv-kJ-bAc" secondAttribute="bottom" constant="29.99" id="YMD-4r-YaR"/>
+                <constraint firstItem="Asv-kJ-bAc" firstAttribute="centerX" secondItem="H55-1Q-Ofl" secondAttribute="centerX" id="rwy-Vd-KL1"/>
+                <constraint firstItem="iV9-dD-Gko" firstAttribute="centerX" secondItem="H55-1Q-Ofl" secondAttribute="centerX" id="3FC-pT-g9X"/>
+            </constraints>
+            <connections>
+                <outlet property="addBtn" destination="iV9-dD-Gko" id="xiV-do-m1L"/>
+            </connections>
+            <point key="canvasLocation" x="68.702290076335871" y="75.704225352112687"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="lijiCreate" width="180" height="48"/>
+        <image name="robotlogo" width="179" height="196"/>
+    </resources>
+</document>
