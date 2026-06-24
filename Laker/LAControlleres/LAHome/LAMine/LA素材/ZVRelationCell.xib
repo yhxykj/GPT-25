@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FZX-w5-yas" customClass="ZVRelationCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="247"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="247"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pauseStore" translatesAutoresizingMaskIntoConstraints="NO" id="nWV-Y5-kqG">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="247"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7B-H6-FvR">
+                        <rect key="frame" x="133" y="0.0" width="47" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46.99" id="Pez-39-YkQ"/>
+                            <constraint firstAttribute="height" constant="46.99" id="cJg-Tw-fbC"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="aymentDance"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="BQ9-Wh-a0V"/>
+            <constraints>
+                <constraint firstItem="l7B-H6-FvR" firstAttribute="top" secondItem="FZX-w5-yas" secondAttribute="top" id="zc2-8w-oBN"/>
+                <constraint firstAttribute="bottom" secondItem="nWV-Y5-kqG" secondAttribute="bottom" id="oBg-aT-mW0"/>
+                <constraint firstAttribute="trailing" secondItem="l7B-H6-FvR" secondAttribute="trailing" id="4Wv-Jq-ahf"/>
+                <constraint firstItem="nWV-Y5-kqG" firstAttribute="top" secondItem="FZX-w5-yas" secondAttribute="top" id="pVq-bP-P2N"/>
+                <constraint firstAttribute="trailing" secondItem="nWV-Y5-kqG" secondAttribute="trailing" id="Nw9-7u-Fof"/>
+                <constraint firstItem="nWV-Y5-kqG" firstAttribute="leading" secondItem="FZX-w5-yas" secondAttribute="leading" id="iNE-fL-VtX"/>
+            </constraints>
+            <size key="customSize" width="180" height="247"/>
+            <connections>
+                <outlet property="bgImage" destination="nWV-Y5-kqG" id="kOo-fR-rwr"/>
+                <outlet property="button" destination="l7B-H6-FvR" id="Gb0-4x-e9G"/>
+            </connections>
+            <point key="canvasLocation" x="230.53435114503816" y="58.098591549295776"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pauseStore" width="168" height="227"/>
+        <image name="aymentDance" width="25" height="25"/>
+    </resources>
+</document>

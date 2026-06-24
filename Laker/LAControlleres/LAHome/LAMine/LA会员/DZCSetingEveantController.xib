@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner" customClass="DZCSetingEveantController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="IHY-4G-OTT" id="aqh-UQ-BGV"/>
+                <outlet property="view" destination="odF-ug-Hqn" id="KC7-tr-GKj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="odF-ug-Hqn">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XoS-OV-hv0">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSP-Uq-0Zr">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55.01" id="e9i-CP-EMX"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="materialEditRemove"/>
+                            <connections>
+                                <action selector="backAction:" destination="JXE-rh-oQk" eventType="touchUpInside" id="QSQ-zQ-d1T"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分明细" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emd-lS-FyB">
+                            <rect key="frame" x="162" y="11.666666666666671" width="69.333333333333314" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="emd-lS-FyB" firstAttribute="centerX" secondItem="XoS-OV-hv0" secondAttribute="centerX" id="IMd-ax-BE8"/>
+                        <constraint firstItem="SSP-Uq-0Zr" firstAttribute="top" secondItem="XoS-OV-hv0" secondAttribute="top" id="qRR-2W-H1J"/>
+                        <constraint firstItem="SSP-Uq-0Zr" firstAttribute="leading" secondItem="XoS-OV-hv0" secondAttribute="leading" id="VoN-Jg-KR5"/>
+                        <constraint firstAttribute="bottom" secondItem="SSP-Uq-0Zr" secondAttribute="bottom" id="Q7e-6h-Y00"/>
+                        <constraint firstAttribute="height" constant="43.96" id="UNB-Wa-4il"/>
+                        <constraint firstItem="emd-lS-FyB" firstAttribute="centerY" secondItem="XoS-OV-hv0" secondAttribute="centerY" id="rwe-Iy-XbC"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="JXE-rh-oQk" estimatedRowHeight="JXE-rh-oQk" sectionHeaderHeight="JXE-rh-oQk" estimatedSectionHeaderHeight="JXE-rh-oQk" sectionFooterHeight="JXE-rh-oQk" estimatedSectionFooterHeight="JXE-rh-oQk" translatesAutoresizingMaskIntoConstraints="NO" id="IHY-4G-OTT">
+                    <rect key="frame" x="0.0" y="108" width="393" height="705"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="JXE-rh-oQk" id="Lx5-uT-Nuv"/>
+                        <outlet property="delegate" destination="JXE-rh-oQk" id="AEO-bg-F67"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="g7a-MZ-wls"/>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XoS-OV-hv0" secondAttribute="trailing" id="xm6-38-7do"/>
+                <constraint firstItem="IHY-4G-OTT" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" id="IEZ-C1-6nn"/>
+                <constraint firstItem="XoS-OV-hv0" firstAttribute="top" secondItem="g7a-MZ-wls" secondAttribute="top" id="0Xb-JO-FB2"/>
+                <constraint firstItem="IHY-4G-OTT" firstAttribute="top" secondItem="XoS-OV-hv0" secondAttribute="bottom" constant="5.01" id="yCV-oo-sKd"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="trailing" secondItem="IHY-4G-OTT" secondAttribute="trailing" id="0Cy-9L-2EN"/>
+                <constraint firstItem="XoS-OV-hv0" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" id="JIt-98-xVG"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="bottom" secondItem="IHY-4G-OTT" secondAttribute="bottom" constant="5.01" id="1v2-tX-dzy"/>
+            </constraints>
+            <point key="canvasLocation" x="-179" y="-61"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="materialEditRemove" width="10" height="18"/>
+    </resources>
+</document>

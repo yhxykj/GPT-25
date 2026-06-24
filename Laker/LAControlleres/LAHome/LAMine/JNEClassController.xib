@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="JXE-rh-oQk" userLabel="File's Owner" customClass="JNEClassController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="cKT-bh-xz8" id="nLj-nD-upi"/>
+                <outlet property="view" destination="odF-ug-Hqn" id="KC7-tr-GKj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="vvu-ZQ-t8W" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="odF-ug-Hqn">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9DF-c8-XSa">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U4-4u-AKT">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54.97" id="iwD-Hs-YaQ"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="materialEditRemove"/>
+                            <connections>
+                                <action selector="backClick:" destination="JXE-rh-oQk" eventType="touchUpInside" id="L5f-0b-xo5"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音色设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-KN-avy">
+                            <rect key="frame" x="164" y="12.333333333333327" width="65.333333333333314" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43.95" id="LnS-JZ-K75"/>
+                        <constraint firstItem="2U4-4u-AKT" firstAttribute="top" secondItem="9DF-c8-XSa" secondAttribute="top" id="Mwb-qM-joH"/>
+                        <constraint firstItem="iy6-KN-avy" firstAttribute="centerX" secondItem="9DF-c8-XSa" secondAttribute="centerX" id="QyX-rY-dmw"/>
+                        <constraint firstAttribute="bottom" secondItem="2U4-4u-AKT" secondAttribute="bottom" id="aUe-iG-4BW"/>
+                        <constraint firstItem="2U4-4u-AKT" firstAttribute="centerY" secondItem="9DF-c8-XSa" secondAttribute="centerY" id="ef7-5O-blw"/>
+                        <constraint firstItem="iy6-KN-avy" firstAttribute="centerY" secondItem="9DF-c8-XSa" secondAttribute="centerY" id="tJA-oe-c7R"/>
+                        <constraint firstItem="2U4-4u-AKT" firstAttribute="leading" secondItem="9DF-c8-XSa" secondAttribute="leading" id="wQK-Wn-9bl"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cKT-bh-xz8">
+                    <rect key="frame" x="0.0" y="108" width="393" height="705"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="t9C-KO-JYf">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="JXE-rh-oQk" id="pJ9-0y-e6v"/>
+                        <outlet property="delegate" destination="JXE-rh-oQk" id="oly-2U-wmX"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="g7a-MZ-wls"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cKT-bh-xz8" firstAttribute="leading" secondItem="g7a-MZ-wls" secondAttribute="leading" id="91f-8F-22z"/>
+                <constraint firstItem="9DF-c8-XSa" firstAttribute="top" secondItem="g7a-MZ-wls" secondAttribute="top" id="5r6-ee-tGH"/>
+                <constraint firstItem="9DF-c8-XSa" firstAttribute="leading" secondItem="odF-ug-Hqn" secondAttribute="leading" id="zTs-iM-OtT"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="bottom" secondItem="cKT-bh-xz8" secondAttribute="bottom" constant="5.04" id="H9n-hR-c4p"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="trailing" secondItem="9DF-c8-XSa" secondAttribute="trailing" id="YDz-d9-jSw"/>
+                <constraint firstItem="g7a-MZ-wls" firstAttribute="trailing" secondItem="cKT-bh-xz8" secondAttribute="trailing" id="YqG-vo-OSu"/>
+                <constraint firstItem="cKT-bh-xz8" firstAttribute="top" secondItem="9DF-c8-XSa" secondAttribute="bottom" constant="5.01" id="l7i-yz-6Xh"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="materialEditRemove" width="10" height="18"/>
+    </resources>
+</document>
